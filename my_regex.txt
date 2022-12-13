@@ -1,0 +1,8 @@
+plik.txt
+plik_2.avi
+pliik_3.mp3
+plik_4.py
+plk_5.mp4
+plik_6.py
+plik_7.exe
+plik_8.py
