@@ -28,13 +28,13 @@ def odczyt():
             lista = []
             for row in data:
                 lista.append(row)
-            print(lista[1:3])
+            # print(lista[1:3])
 
             # for value in lista[1:3]:
             #
             #     print(value.keys())
 
-            for element in lista[1:3]:
+            for element in lista[0:3]:
 
                 # print(element['Kategoria'], element['Kwota operacji'])
                 # print(element[4], element[5])
