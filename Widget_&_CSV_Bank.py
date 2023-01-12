@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QGridLayout
-from PyQt5.QtGui import QIcon
+
+from PyQt5.QtWidgets import QHBoxLayout, QLineEdit
 
 class Window(QWidget):
     def __init__(self, parent=None):
@@ -20,6 +21,14 @@ class Window(QWidget):
         position = QGridLayout()
         position.addWidget(label1, 0, 0)
         position.addWidget(label2, 0, 1)
+
+        # 1-lined edit field
+        self.category = QLineEdit()
+        self.amount = QLineEdit()
+
+        # placing the edit fields on the Window
+        position.addWidget(self.category, 1, 0)
+        position.addWidget(self.amount, 1, 1)
 
         # connecting defined layout(układu) with created window
         self.setLayout(position)
