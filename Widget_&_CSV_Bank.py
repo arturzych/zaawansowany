@@ -23,8 +23,8 @@ class Window(QWidget):
         position.addWidget(label2, 0, 1)
 
         # 1-lined edit field
-        self.category = QLineEdit()
-        self.amount = QLineEdit()
+        self.category = QLineEdit('Tutaj umieść nazwę kategorii')
+        self.amount = QLineEdit('Tutaj umieść wartość')
 
         # placing the edit fields on the Window
         position.addWidget(self.category, 1, 0)
