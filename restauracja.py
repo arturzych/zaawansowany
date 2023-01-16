@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 from abc import ABC, abstractmethod
 
 
@@ -11,20 +14,16 @@ class Restauracja(ABC):
         self.ice_cream = lody
         self.burger = burger
 
-
-
-
-
     def daj_jesc(self, Burger_King, Mc_Donalds, Bazyliszek, Besova):
         self.food = Mc_Donalds, Burger_King, Bazyliszek, Besova
         self.drink = Mc_Donalds, Bazyliszek, Besova
         self.dessert = Besova
-class
+
 
 class Club(Restauracja):
     def eat(self):
         print(f'Obiad mozesz zjesc w {self.food}')
         print('\n ')
 
-club = Club()
+club = Club('latte', 'pomidorowa', 'karp', 'turecki', 'Wrap', 'włoskie', 'wołowy')
 print(club.coffee)
